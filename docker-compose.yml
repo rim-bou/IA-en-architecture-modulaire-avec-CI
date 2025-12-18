@@ -1,11 +1,11 @@
 services:
   backend:
-    build: ./backend
+    image: rimbourgou/fastia-backend:${APP_VERSION}
     ports:
       - "8000:8000"
 
   frontend:
-    build: ./frontend
+    image: rimbourgou/fastia-frontend:${APP_VERSION}
     environment:
       - API_URL=http://backend:8000
     ports:
