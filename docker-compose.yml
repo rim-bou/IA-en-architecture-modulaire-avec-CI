@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   backend:
     image: rimbourgou/fastia-backend:${APP_VERSION}
